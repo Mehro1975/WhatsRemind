@@ -66,3 +66,9 @@ app.post('/api/createreminder', CreateReminder);
 app.delete('/api/deleteReminder', DeleteReminder);
 
 module.exports = app;
+const port = process.env.PORT;
+const server = process.env.SERVER;
+
+app.listen(port, () => {
+  console.log(`Server is Running`);
+});
